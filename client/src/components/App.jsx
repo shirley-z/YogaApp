@@ -33,6 +33,7 @@ class App extends React.Component {
       <div>
         <h1>Cup of Tea Yoga Poses App</h1>
         {this.state.poses && <Poses poses={this.state.poses} fetchData={this.fetchData} />}
+        {this.state.started ? 'End' : <button id="begin" type="button" class="btn btn-secondary btn-lg">Begin Practice!</button>}
       </div>
     )
   }
