@@ -35,7 +35,7 @@ class Session extends React.Component {
   render() {
     return (
       <>
-      {this.state.ended ? <span id="end">Your practice has endeded.</span>
+      {this.state.ended ? <span id="end">Your practice has ended.</span>
       :
       (<div className="session">
         {this.state.currentPose && <img className="single-pose" src={this.state.currentPose.picture} />}
