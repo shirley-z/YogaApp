@@ -15,7 +15,7 @@ const Pose = ({ pose, fetchData }) => {
 
   return (
     <div className="tile">
-      <img src={picture} alt="yoga pose" />
+      <img src={picture} alt="yoga pose" className="pose-list" />
       <button type="button" class="btn btn-secondary btn-sm" onClick={changeSelection} >{selected ? 'Deselect' : 'Select'}</button>
     </div>
   );

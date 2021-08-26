@@ -37,9 +37,10 @@ class Session extends React.Component {
       <>
       {this.state.ended ? <span id="end">Your practice has endeded.</span>
       :
-      (<div>
-        {this.state.currentPose && <img src={this.state.currentPose.picture} />}
-        {this.state.currentPose && <Countdown key={this.state.index} date={Date.now() + 3000} onComplete={this.onComplete} />}
+      (<div className="session">
+        {this.state.currentPose && <img className="single-pose" src={this.state.currentPose.picture} />}
+        <br />
+        {this.state.currentPose && <Countdown className="countdown" key={this.state.index} date={Date.now() + this.state.currentPose.duration} onComplete={this.onComplete} />}
       </div>)}
       </>
     );
